@@ -5,7 +5,7 @@ package responsibleTutor.api_responsibleTutor.Estudiante;
     import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-    @FeignClient(name = "bff.estudiante", url = "http://localhost:8000/api/estudiante")
+    @FeignClient(name = "bff.persona", url = "http://localhost:8000/api/persona")
     public interface EstudianteClient {
 
         @GetMapping("/{id}/")
